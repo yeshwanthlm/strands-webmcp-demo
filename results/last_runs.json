@@ -1,0 +1,16 @@
+{
+  "off": {
+    "ok": true,
+    "calls": 9,
+    "models": 10,
+    "tokens": 39488,
+    "wall_ms": 11592
+  },
+  "on": {
+    "ok": true,
+    "calls": 4,
+    "models": 5,
+    "tokens": 10231,
+    "wall_ms": 6660
+  }
+}

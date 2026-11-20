@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Palace Road Tiffin Room &middot; Mysuru</title>
+<meta name="description" content="Order tiffin for pickup from Palace Road Tiffin Room, Mysuru." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top">
+    <svg class="mark" viewBox="0 0 44 44" aria-hidden="true">
+      <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M11 27c0-6 5-11 11-11s11 5 11 11" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M8 27h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M22 16V9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="22" cy="7" r="2.2" fill="currentColor"/>
+    </svg>
+    <span class="brand-text">
+      <strong>Palace Road</strong>
+      <em>Tiffin Room &middot; Mysuru</em>
+    </span>
+  </a>
+
+  <nav class="nav" aria-label="Sections">
+    <a href="#menu-section">Menu</a>
+    <a href="#order-section">Order</a>
+    <a href="#visit">Visit</a>
+  </nav>
+
+  <button id="webmcp-toggle" class="toggle" type="button" role="switch"
+          aria-checked="false" aria-label="WebMCP">
+    <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+    <span class="toggle-text" aria-hidden="true">WebMCP <strong id="webmcp-state">off</strong></span>
+  </button>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <p class="eyebrow">Serving since 1954</p>
+    <h1>Breakfast the way Mysuru has always made it.</h1>
+    <p class="lede">
+      Rice ground on stone, batter rested overnight, coffee filtered twice.
+      Order ahead and pick it up hot from the counter.
+    </p>
+    <div class="hero-facts">
+      <span><strong>4.7</strong> &#9733; &nbsp;2,814 ratings</span>
+      <span><strong>12 min</strong> average pickup</span>
+      <span><strong>Pure veg</strong></span>
+    </div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <div class="plate">
+      <div class="dosa"></div>
+      <div class="bowl bowl-1"></div>
+      <div class="bowl bowl-2"></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" role="note">
+  <span>Pickup only &middot; no delivery charge</span>
+  <span>Counter open 7:00 AM &ndash; 8:30 PM</span>
+  <span>UPI accepted</span>
+</div>
+
+<main class="layout">
+
+  <section class="col-menu" id="menu-section">
+    <div class="section-head">
+      <h2>Today's menu</h2>
+      <p class="hint">Choose how many of each you want. Prices include taxes.</p>
+    </div>
+
+    <nav class="chips" aria-label="Menu categories">
+      <a href="#cat-tiffin">Tiffin</a>
+      <a href="#cat-rice">Rice plates</a>
+      <a href="#cat-drinks">Coffee &amp; drinks</a>
+      <a href="#cat-sweets">Sweets</a>
+    </nav>
+
+    <div id="menu"></div>
+  </section>
+
+  <aside class="col-order" id="order-section">
+    <div class="order-card">
+      <h2>Your order</h2>
+
+      <ul id="cart" class="cart"><li class="cart-empty">Nothing added yet.</li></ul>
+
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="total">&#8377;0</strong>
+      </div>
+
+      <form id="order-form" novalidate>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autocomplete="name"
+               placeholder="Name for the counter" />
+
+        <label for="pickup">Pickup time</label>
+        <select id="pickup" name="pickup">
+          <option value="">Choose a time</option>
+          <!-- Every half hour while the counter is open. Filled in by app.js. -->
+        </select>
+
+        <label for="notes">Notes for the kitchen <span class="opt">optional</span></label>
+        <input id="notes" name="notes" type="text" placeholder="Less spicy, extra chutney" />
+
+        <button id="place-order" type="submit">Place order</button>
+        <p id="error" class="error" hidden></p>
+        <p class="assurance">No payment now. Pay at the counter or by UPI after you order.</p>
+      </form>
+    </div>
+
+    <div id="receipt" class="order-card receipt" hidden>
+      <h2>Order confirmed</h2>
+      <p class="receipt-id">Token <strong id="order-id"></strong></p>
+      <ul id="receipt-items"></ul>
+      <p class="receipt-line">Pickup at <strong id="receipt-pickup"></strong></p>
+      <p class="receipt-line">Amount <strong id="receipt-total"></strong></p>
+      <button id="pay" type="button">Pay with UPI</button>
+      <p id="paid" class="paid" hidden>Paid. Show this screen at the counter.</p>
+    </div>
+
+    <div class="order-card log-panel">
+      <h2>Activity</h2>
+      <ol id="log" class="log"><li class="muted">Nothing yet.</li></ol>
+    </div>
+  </aside>
+
+</main>
+
+<footer id="visit">
+  <div class="foot-grid">
+    <div>
+      <h3>Visit the counter</h3>
+      <p>Opposite the north gate, Palace Road, Mysuru 570001</p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <p>Every day, 7:00 AM to 8:30 PM</p>
+    </div>
+    <div>
+      <h3>Demo notice</h3>
+      <p>A teaching site for AWS Student Community Day Mysuru. Not a real shop,
+         and no order here reaches a kitchen.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<!-- The WebMCP layer. The switch in the header turns it on and off live.
+     Off: no tools exist, and an agent must drive the page like a person.
+     On:  three tools are registered. Nothing else on the page changes. -->
+<script src="webmcp.js"></script>
+<!-- Demo only: the live agent panel. Hidden from people and from agents
+     until the Python agent turns it on. -->
+<script src="hud.js"></script>
+
+</body>
+</html>

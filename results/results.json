@@ -1,0 +1,367 @@
+{
+  "meta": {
+    "recorded_at": "2026-11-20T17:47:13+00:00",
+    "model_id": "us.amazon.nova-2-lite-v1:0",
+    "region": "us-east-1",
+    "task": "Order 2 masala dosas and 1 filter coffee for Yeshwanth, pickup at 1 pm.",
+    "expected": {
+      "items": {
+        "dosa": 2,
+        "coffee": 1
+      },
+      "name": "Yeshwanth",
+      "pickup": "13:00"
+    },
+    "runs_per_arm": 10,
+    "labels": {
+      "A_no_webmcp": "Arm A \u2014 no WebMCP",
+      "B_webmcp": "Arm B \u2014 WebMCP"
+    }
+  },
+  "runs": {
+    "A_no_webmcp": [
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 266,
+        "model_latency_ms": 4050,
+        "wall_s": 7.0,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 255,
+        "model_latency_ms": 3634,
+        "wall_s": 6.6,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 254,
+        "model_latency_ms": 4156,
+        "wall_s": 8.9,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 258,
+        "model_latency_ms": 3948,
+        "wall_s": 7.2,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 250,
+        "model_latency_ms": 3796,
+        "wall_s": 6.4,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 256,
+        "model_latency_ms": 3328,
+        "wall_s": 5.9,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 287,
+        "model_latency_ms": 4520,
+        "wall_s": 7.1,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 276,
+        "model_latency_ms": 11343,
+        "wall_s": 14.1,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 260,
+        "model_latency_ms": 3763,
+        "wall_s": 6.3,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 5,
+        "input_tokens": 16081,
+        "output_tokens": 307,
+        "model_latency_ms": 3748,
+        "wall_s": 6.2,
+        "tool_calls": 8,
+        "tool_errors": 0,
+        "tools_used": {
+          "read_page": 2,
+          "click_button": 4,
+          "fill_field": 1,
+          "select_option": 1
+        },
+        "stop_reason": "end_turn"
+      }
+    ],
+    "B_webmcp": [
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 162,
+        "model_latency_ms": 2444,
+        "wall_s": 4.1,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 161,
+        "model_latency_ms": 1979,
+        "wall_s": 3.4,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 136,
+        "model_latency_ms": 2107,
+        "wall_s": 3.4,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 152,
+        "model_latency_ms": 2076,
+        "wall_s": 4.1,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 158,
+        "model_latency_ms": 1845,
+        "wall_s": 3.5,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 146,
+        "model_latency_ms": 1863,
+        "wall_s": 3.4,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 158,
+        "model_latency_ms": 2275,
+        "wall_s": 4.0,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 139,
+        "model_latency_ms": 1935,
+        "wall_s": 3.3,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 157,
+        "model_latency_ms": 1948,
+        "wall_s": 3.5,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      },
+      {
+        "ok": true,
+        "why": "ok",
+        "cycles": 3,
+        "input_tokens": 4757,
+        "output_tokens": 142,
+        "model_latency_ms": 1851,
+        "wall_s": 3.3,
+        "tool_calls": 2,
+        "tool_errors": 0,
+        "tools_used": {
+          "list_site_tools": 1,
+          "call_site_tool": 1
+        },
+        "stop_reason": "end_turn"
+      }
+    ]
+  }
+}

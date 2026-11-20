@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Terraform
+infra/.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Agent runtime: Chrome profile (contains cookies/sessions/login data)
+agent/extras/.chrome-profile/

@@ -1,0 +1,7 @@
+strands-agents
+playwright
+boto3
+
+# for presenting from TALK.ipynb
+jupyterlab
+ipykernel
