@@ -1,5 +1,13 @@
 # My website can talk to an AI agent. I added it in 20 lines.
 
+### Demo Prompts:
+
+```
+Get me 3 idli vada and a badam milk for Asha, pickup at 9:30 in the morning. Less spicy please.
+
+Order one Mysore Pak and one Kesari Bath for Ravi at 6 pm, and pay for it.
+```
+
 AWS Student Community Day Mysuru, 2026.
 
 **Palace Road Tiffin Room** is one ordinary restaurant website with a
